@@ -13,7 +13,7 @@ layers:
   - O
   - {t: ;, s: ':'}
   - LEFT WIN
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - $$mdi:keyboard-tab$$
   - A
   - S
   - D
@@ -47,7 +47,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   - NUMBER
-  - {t: CNTRLS, h: toggle}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   NUMBER:
   - F1
   - F2
@@ -97,9 +97,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  CNTRLS:
-  - '&reset'
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  CTRL:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -146,3 +146,18 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [45, 41]
+  k: $$mdi:backspace-reverse-outline$$
+- p: [42, 43, 44]
+  k: {t: CTRL, h: toggle}
+  l: [QWERTY]
+- p: [45, 46, 47]
+  k: {t: CTRL, h: toggle}
+  l: [QWERTY]
+- p: [42, 43, 44]
+  k: {t: CTRL, h: toggle}
+  l: [CTRL]
+- p: [45, 46, 47]
+  k: {t: CTRL, h: toggle}
+  l: [CTRL]
