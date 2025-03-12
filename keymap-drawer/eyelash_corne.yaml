@@ -11,7 +11,7 @@ layers:
   - U
   - I
   - O
-  - P
+  - {t: ;, s: ':'}
   - LEFT WIN
   - $$mdi:keyboard-tab$$
   - A
@@ -26,7 +26,7 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
+  - P
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
@@ -34,7 +34,7 @@ layers:
   - C
   - V
   - B
-  - MUTE
+  - $$mdi:volume-off$$
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -46,8 +46,8 @@ layers:
   - NUMBER
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
+  - NUMBER
   - {t: CNTRLS, h: toggle}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
   NUMBER:
   - F1
   - F2
@@ -77,12 +77,12 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '-', s: _}
-  - PREV
-  - VOLUME DOWN
-  - MUTE
-  - VOLUME UP
+  - PREVIOUS
+  - $$mdi:volume-low$$
+  - $$mdi:volume-off$$
+  - $$mdi:volume-high$$
   - PLAY PAUSE
-  - NEXT
+  - $$mdi:skip-next$$
   - PRINTSCREEN
   - PgDn
   - '{'
@@ -95,11 +95,11 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   CNTRLS:
   - '&soft_off'
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -109,8 +109,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&bl BL_CYCLE'
-  - '&bl BL_TOG'
+  - '&bl BL_ON'
+  - '&bl BL_OFF'
   - $$mdi:bluetooth-off$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -122,9 +122,9 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - RGB TOG
   - RGB EFF
-  - RGB SAI
   - RGB SPI
   - RGB BRI
+  - RGB SAI
   - RGB HUI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -136,9 +136,9 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - RGB COLOR HSB(0,0,100)
   - RGB EFR
-  - RGB SAD
   - RGB SPD
   - RGB BRD
+  - RGB SAD
   - RGB HUD
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
