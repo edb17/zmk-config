@@ -50,21 +50,7 @@
         tap-ms = <100>;
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        shift+backspace_is_delete {
-            bindings = <&kp DELETE>;
-            key-positions = <42 41>;
-            layers = <0>;
-        };
-
-        shift+backspace_is_delete_2 {
-            bindings = <&kp DELETE>;
-            key-positions = <41 47>;
-            layers = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -96,7 +82,7 @@
         controls {
             display-name = "CNTRLS";
             bindings = <
-&soft_off   &trans        &trans        &trans        &trans        &trans                                         &mmv MOVE_UP                     &trans                          &trans           &trans           &trans           &bl BL_ON        &bl BL_OFF
+&trans      &trans        &trans        &trans        &trans        &trans                                         &mmv MOVE_UP                     &trans                          &trans           &trans           &bl BL_SET 100   &bl BL_ON        &bl BL_OFF
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_NXT                     &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &rgb_ug RGB_TOG                 &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI
 &trans      &trans        &trans        &trans        &trans        &trans      &rgb_ug RGB_TOG                    &mmv MOVE_DOWN                   &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_EFR  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD
                                         &trans        &trans        &trans                                                                          &trans                          &trans           &trans
