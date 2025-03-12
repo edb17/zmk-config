@@ -156,8 +156,8 @@ combos:
   k: {t: CTRL, h: toggle}
   l: [QWERTY]
 - p: [42, 43, 44]
-  k: {t: CTRL, h: toggle}
+  k: {t: QWERTY, h: toggle}
   l: [CTRL]
 - p: [45, 46, 47]
-  k: {t: CTRL, h: toggle}
+  k: {t: QWERTY, h: toggle}
   l: [CTRL]
