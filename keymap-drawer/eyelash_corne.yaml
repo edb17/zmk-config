@@ -11,7 +11,7 @@ layers:
   - U
   - I
   - O
-  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
   - LEFT WIN
   - $$mdi:keyboard-tab$$
   - A
@@ -27,7 +27,7 @@ layers:
   - K
   - L
   - P
-  - {t: '''', s: '"'}
+  - {t: ;, s: ':'}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -151,13 +151,5 @@ combos:
   k: $$mdi:backspace-reverse-outline$$
 - p: [42, 43, 44]
   k: {t: CTRL, h: toggle}
-  l: [QWERTY]
-- p: [45, 46, 47]
-  k: {t: CTRL, h: toggle}
-  l: [QWERTY]
-- p: [42, 43, 44]
-  k: {t: QWERTY, h: toggle}
-  l: [CTRL]
 - p: [45, 46, 47]
   k: {t: QWERTY, h: toggle}
-  l: [CTRL]
