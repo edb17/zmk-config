@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - {t: '''', s: '"'}
-  - LEFT WIN
+  - {t: ;, s: ':'}
   - $$mdi:keyboard-tab$$
   - A
   - S
@@ -27,14 +27,14 @@ layers:
   - K
   - L
   - P
-  - {t: ;, s: ':'}
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
   - V
   - B
-  - $$mdi:volume-off$$
+  - PLAY PAUSE
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -47,7 +47,7 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-shift$$
   - NUMBER
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - LEFT WIN
   NUMBER:
   - F1
   - F2
@@ -69,28 +69,28 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - HOME
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-shift$$
   - END
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '-', s: _}
-  - PREVIOUS
-  - $$mdi:volume-low$$
-  - $$mdi:volume-off$$
-  - $$mdi:volume-high$$
-  - PLAY PAUSE
-  - $$mdi:skip-next$$
+  - {t: \, s: '|'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - (
+  - {t: '[', s: '{'}
+  - '{'
   - PRINTSCREEN
   - PgDn
-  - '{'
   - '}'
-  - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - \
+  - )
+  - {t: '-', s: _}
   - {t: '=', s: +}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -147,9 +147,5 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [45, 41]
-  k: $$mdi:backspace-reverse-outline$$
 - p: [42, 43, 44]
   k: {t: CTRL, h: toggle}
-- p: [45, 46, 47]
-  k: {t: QWERTY, h: toggle}
